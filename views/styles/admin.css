@@ -1,0 +1,135 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
+
+select,
+input,
+textarea {
+	margin-bottom: 10px;
+	min-width: 350px;
+	min-height: 18px;
+}
+
+#loginForm {
+	justify-content: center;
+	font-family: 'Montserrat', sans-serif;
+}
+
+#content {
+	font-family: 'Montserrat', sans-serif;
+	flex-direction: column;
+}
+
+#infoForm {
+	display: flex;
+	flex-direction: column;
+	margin-left: 20px;
+}
+
+.shelters-form {
+	display: flex;
+	flex-direction: column;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+
+#sheltersList {
+	border: 1px solid black;
+	height: 300px;
+	margin-bottom: 10px;
+}
+
+.shelter-item {
+	display: flex;
+	justify-content: space-between;
+	font-family: monospace;
+	border: 1px solid black;
+	max-width: 250px;
+}
+
+.shelters-list {
+	height: 300px;
+	width: 250px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+.delete-button {
+	border: none;
+	background: none;
+	cursor: pointer;
+}
+
+.form-shelter-button {
+	margin-left: 10px;
+}
+
+.form-photo {
+	width: 250px;
+	margin-bottom: 10px;
+}
+
+.login-form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.login-form input {
+	margin-bottom: 10px;
+}
+
+.head {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.body {
+	margin-top: 20px;
+	height: 93vh;
+	display: flex;
+}
+
+.list-item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border: 1px solid black;
+	border-radius: 10px;
+	width: 450px;
+	margin-bottom: 10px;
+}
+
+#requestsList {
+	height: 94%;
+	overflow-y: auto;
+	width: fit-content;
+}
+
+.list-item-image {
+	height: 60px;
+	max-width: 60px;
+	border-radius: 10px;
+}
+
+.list-item-phone {
+	padding-left: 15px;
+}
+
+.list-item-delete-btn {
+	padding-right: 15px;
+	cursor: pointer;
+}
+
+.list-item-sex,
+.list-item-place,
+.list-item-kind {
+	padding-left: 15px;
+}
+
+.list-item-info-container {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}

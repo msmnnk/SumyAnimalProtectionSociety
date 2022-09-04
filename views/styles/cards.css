@@ -1,0 +1,42 @@
+#about {
+	display: flex;
+	justify-content: flex-start;
+	height: 90vh;
+	flex-direction: column;
+	padding-top: 12%;
+	margin-top: -12%;
+}
+
+.card-container {
+	display: flex;
+	justify-content: center;
+	align-content: space-around;
+	align-items: center;
+}
+
+.card {
+	padding: 5px 20px 32px 20px;
+	text-align: left;
+	border: 3px solid #231E54;
+	border-radius: 25px;
+	width: 25%;
+	height: 80%;
+	margin-left: 25px;
+}
+
+p.cardtext {
+	margin-left: auto;
+	margin-right: auto;
+	width: 350px;
+}
+
+h2.cardheader {
+	text-align: center;
+}
+
+img.cardimage {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 48%;
+}

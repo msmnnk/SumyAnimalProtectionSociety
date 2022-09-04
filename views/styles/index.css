@@ -1,0 +1,27 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
+
+h2 {
+	color: #231E54;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 900;
+}
+
+h3 {
+	color: #231E54;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 900;
+}
+
+p {
+	color: #231E54;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.colortext {
+	color: #FBAD36;
+}
+
+#contact {
+	padding-top: 17%;
+	margin-top: -12%;
+}

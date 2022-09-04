@@ -1,0 +1,41 @@
+#contact {
+	display: flex;
+	justify-content:space-between;
+}
+
+#left-container {
+	text-align: center;
+}
+
+#right-container {
+	text-align: right;
+	margin-top: 1.8%;
+	margin-right: 2%;
+}
+
+#footerImage {
+	margin-left: -5%;
+	margin-bottom: -52% !important;
+}
+
+#phone {
+	margin-left: 18%;
+	margin-bottom: -32%;
+}
+
+#socialmedia {
+	display: flex;
+}
+
+#copyright {
+	font-size: 14px;
+}
+
+footer p {
+	font-size: 16px;
+}
+
+footer li {
+	list-style-type: none;
+	margin-left: 6px;
+}

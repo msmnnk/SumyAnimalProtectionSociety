@@ -1,0 +1,75 @@
+.info-div {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	color: #231E54;
+	margin-left: 1%;
+	margin-top: 2px;
+}
+
+.info-name::before {
+	content: 'Прізвисько: ';
+	font-weight: 600;
+}
+
+.info-age::before {
+	content: 'Вік: ';
+	font-weight: 600;
+}
+
+.info-breed::before {
+	content: 'Порода: ';
+	font-weight: 600;
+}
+
+.info-color::before {
+	content: 'Колір: ';
+	font-weight: 600;
+}
+
+.info-number::before {
+	content: 'Телефон: ';
+	font-weight: 600;
+}
+
+.info-shelter::before {
+	content: 'Перетримка: ';
+	font-weight: 600;
+}
+
+.info-description::before {
+	content: 'Коментар: ';
+	font-weight: 600;
+}
+
+.info-photo {
+	height: 300px;
+	width: auto;
+	max-width: 400px;
+	margin-bottom: 7px;
+}
+
+.info-description {
+	max-width: 300px;
+}
+
+.info-tags {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 10px;
+	margin-left: -10px;
+}
+
+.info-type,
+.info-kind,
+.info-sex {
+	border: 2px solid #FBAD36;
+	border-radius: 25px;
+	padding: 10px 15px 10px 15px;
+	color: #FBAD36 !important;
+}
+
+#populatedForm {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+}

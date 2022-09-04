@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>SAPS Admin</title>
+		<link rel="stylesheet" href="styles/admin.css">
+		<link rel="apple-touch-icon" sizes="180x180" href="resources/favicons/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="resources/favicons/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="resources/favicons/favicon-16x16.png">
+	</head>
+	<body>
+		<div id="loginForm" style="display: none">
+			<form onsubmit="login(event)" class="login-form">
+				<h4>LOGIN</h4>
+				<input type="text" name="username" placeholder="Username" required>
+				<input type="password" name="password" placeholder="Password" required>
+				<input type="submit" value="Login">
+			</form>
+		</div>
+		<div id="content" style="display: none">
+			<div class="head">
+				<div class="head-label">SAPS Admin Panel</div>
+				<button onclick="logout()">Logout</button>
+			</div>
+			<h4>Requests</h4>
+			<div class="body">
+				<div id="requestsList">
+				</div>
+				<div id="infoForm">
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="/scripts/admin.js" type="text/javascript"></script>
+</html>

@@ -1,0 +1,179 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Сумське товариство захисту тварин</title>
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+		integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+		crossorigin="" />
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+	<link rel="stylesheet" href="styles/index.css">
+	<link rel="stylesheet" href="styles/header.css">
+	<link rel="stylesheet" href="styles/main.css">
+	<link rel="stylesheet" href="styles/searchPet.css">
+	<link rel="stylesheet" href="styles/cards.css">
+	<link rel="stylesheet" href="styles/footer.css">
+	<link rel="stylesheet" href="styles/infoForm.css">
+	<link rel="apple-touch-icon" sizes="180x180" href="resources/favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="resources/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="resources/favicons/favicon-16x16.png">
+</head>
+
+<body>
+	<header id="stickyHeader">
+		<div class="logo-container">
+			<img src="resources/logo.svg">
+		</div>
+		<div class="menu-container">
+			<ul id="menu">
+				<li><a href="#main">Головна</a></li>
+				<li><a href="#about">Про проект</a></li>
+				<li><a href="#search">Пошук тварин</a></li>
+				<li><a href="#contact">Контакти</a></li>
+			</ul>
+		</div>
+		<div class="button-container">
+			<a class="button" href="https://next.privat24.ua/money-transfer/form/%7B%22form%22:%7B%22receiver%22:%7B%22source%22:%22manual%22,%22number%22:%225363542015950596%22%7D,%22amount%22:%220%22,%22currency%22:%22UAH%22%7D%7D">Допомогти</a>
+		</div>
+	</header>
+
+	<div id="main">
+		<div id="main-text">
+			<h2>Не у кожної людини має бути тварина, але у кожної тварини має бути відповідальна <span
+					class="colortext">людина</span></h2>
+			<p>Сумське товариство захисту тварин є некомерційною організацією, яка не фінансується органами державної
+				влади
+				та реалізує свої цілі виключно за рахунок членських внесків та благодійних пожертвувань.</p>
+		</div>
+		<div id="illustration">
+			<img class="main-illustration" src="resources/illustration.svg">
+		</div>
+	</div>
+
+	<div id="about">
+		<div class='card-container'>
+			<div class="card">
+				<img class="cardimage" src="resources/card_1.svg">
+				<h2 class="cardheader">Пошук тварин</h2>
+				<p class="cardtext">Ми знаходимо старих та нових власників для чотирилапих друзів або членів родини
+					для відповідальних людей
+				</p>
+			</div>
+			<div class="card">
+				<img class="cardimage" src="resources/card_2.svg">
+				<h2 class="cardheader">Прилаштування</h2>
+				<p class="cardtext">Ми пропонуємо послуги перетримання, а також допомогу з
+					прилаштування улюбленців на ринку</p>
+			</div>
+			<div class="card">
+				<img class="cardimage" src="resources/card_3.svg">
+				<h2 class="cardheader">Стерилізація</h2>
+				<p class="cardtext">Ми домовляємось щодо мінімальної вартості операції з
+					найдосвідченішими ветеринарними фахівцями</p>
+			</div>
+		</div>
+		<div class='card-container'>
+			<div class="card">
+				<img class="cardimage" src="resources/card_4.svg">
+				<h2 class="cardheader">Розміщення інформації</h2>
+				<p class="cardtext">Ми допомогаємо шляхом розміщення оголошень, підписані понад 12 000 осіб</p>
+			</div>
+			<div class="card">
+				<img class="cardimage" src="resources/card_5.svg">
+				<h2 class="cardheader">Юридична допомога</h2>
+				<p class="cardtext">Ми надаємо юридичну допомогу та консультації з питань зоозахисту</p>
+			</div>
+			<div class="card">
+				<img class="cardimage" src="resources/card_6.svg">
+				<h2 class="cardheader">Лекції в закладах освіти</h2>
+				<p class="cardtext">Ми проводимо лекції студентам, уроки доброти школярам та презентації</p>
+			</div>
+		</div>
+	</div>
+
+	<div id="search" class="searchDescription">
+		<img id="gifCat" src="resources/cat.gif">
+		<div id="searchText">
+			<h2>Пошук тварин</h2>
+			<p>Найважливішим аспектом в питанні зоозахисту є проблема безпритульних тварин. Саме для її вирішення ми
+				розробили наш сервіс пошуку чотирилапих улюбленців. Загубили свого друга чи випадково знайшли
+				чийогось?
+				Заповніть форму і допоможіть створінню знайти свій дім! Надсилайте будь-яку інформацію, яка може
+				стати у
+				нагоді, а також не забудьте поділитися своїми контактними даними для зв’язку. Разом ми зможемо
+				викоренити
+				явище “безпритульності” в місті Суми!</p>
+		</div>
+	</div>
+	<div class="search">
+		<div id="tabBar" onclick="tabHandler(event)">
+			<div id="newRequest" class="tab active">Нова заявка</div>
+			<div id="animals" class="tab">Тварини</div>
+		</div>
+		<div id="newRequestTab">
+			<div id="map"></div>
+			<form class="form" onsubmit="submitHandler(event)">
+				<div class="selector" id="form-status" onclick="selectorHandler(event)">
+					<input class="formButton selected" type="button" value="Загублено">
+					<input class="formButton" type="button" value="Знайдено">
+				</div>
+				<div class="selector" id="form-kind" onclick="selectorHandler(event)">
+					<input class="formButton selected" type="button" value="Собака">
+					<input class="formButton" type="button" value="Кішка">
+				</div>
+				<div class="selector" id="form-sex" onclick="selectorHandler(event)">
+					<input class="formButton selected" type="button" value="Хлопчик">
+					<input class="formButton" type="button" value="Дівчинка">
+				</div>
+				<input class="field" type="text" placeholder="Прізвисько..." id="form-name">
+				<input class="field" type="text" placeholder="Колір..." id="form-color">
+				<input class="field" type="text" placeholder="Вік..." id="form-age">
+				<input class="field" type="text" placeholder="Порода..." id="form-breed">
+				<input class="field" type="tel" placeholder="Номер телефону..." id="form-number">
+				<textarea class="field" placeholder="Коментар..." id="form-comment" rows="5" cols="33"></textarea>
+				<div class="file-selector">
+					<input type="file" id="form-photo" accept="image/png, image/jpeg" style="display:none;" onchange="fileHandler(event)">
+					<label for="form-photo" class="custom-file-input"></label>
+					<p id="file-name">До 5 МБ</p>
+				</div>
+				<input id="submit" class="button" type="submit" value="Відправити заявку">
+			</form>
+		</div>
+		<div id="animalsTab">
+			<div id="animalMap"></div>
+			<div id="animalForm"></div>
+		</div>
+	</div>
+
+	<footer id="contact">
+		<div id="left-container">
+			<div id="phone">
+				<p>Із задоволенням відповімо на будь-які<br>запитання щодо роботи товариства:</p>
+				<h3>+38 (050) 307-18-55</h3>
+			</div>
+			<img id="footerImage" src="resources/footer.svg">
+		</div>
+		<div id="right-container">
+			<p>Ми знаходимось за адресою: <br> вул. Івана Багряного, 2-А <br> м. Суми, Україна</p>
+			<ul id="socialmedia">
+				<li><a href="mailto:info@animal-home.sumy.ua"><img src="resources/email.svg"></a></li>
+				<li><a href="https://www.facebook.com/sumy.animal.home/"><img src="resources/facebook.svg"></a></li>
+				<li><a href="https://www.instagram.com/helping_animals_in_sumy/"><img src="resources/instagram.svg"></a></li>
+				<li><a href="https://www.youtube.com/channel/UCO4_oflHZ_WfCexAtDKSBzw"><img src="resources/youtube.svg"></i></a></li>
+			</ul>
+			<br>
+			<p id="copyright">© Copyright 2004-2022 - СТЗТ</p>
+		</div>
+	</footer>
+</body>
+
+<script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+	integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+	crossorigin=""></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<script src="/scripts/requests.js" type="text/javascript"></script>
+<script src="/scripts/tab.js" type="text/javascript"></script>
+<script src="/scripts/helper.js" type="text/javascript"></script>
+<script src="/scripts/map.js" type="text/javascript"></script>
+<script src="/scripts/form.js" type="text/javascript"></script>
+</html>
